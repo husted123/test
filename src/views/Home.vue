@@ -25,17 +25,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.wedio-logo {
-  max-width: 800px;
-  max-height: 400px;
-}
-h1 {
-  margin-top: 100px;
-}
+
 </style>
