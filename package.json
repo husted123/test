@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "renderkid": "^3.0.0",
+    "sass-resources-loader": "^2.1.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
@@ -27,6 +29,7 @@
     "eslint-plugin-vue": "^7.0.0-0",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
+    "sass": "^1.27.1",
     "sass-loader": "^8.0.2"
   },
   "eslintConfig": {

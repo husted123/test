@@ -1,0 +1,261 @@
+@import "../assets/styles/variables.scss";
+.wedio-button {
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100px;
+  min-height: 48px;
+  min-width: 180px;
+  line-height: 48px;
+  padding: 0% 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  transition-duration: 0.3s;
+  &:hover {
+    transition-duration: 0.3s;
+  }
+
+  // PRIMARY
+  &.primary {
+    background-color: $dark-green;
+    color: white;
+    border: none;
+    &:disabled {
+      background-color: #aaaaaa;
+      opacity: 1;
+      pointer-events: none;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: $green;
+    }
+  }
+
+  // WEDIO-RED
+  &.wedio-red {
+    background-color: $wedio-red-button;
+    color: white;
+    border: none;
+    height: 41px !important;
+    &:disabled {
+      background-color: #aaaaaa;
+      opacity: 1;
+      pointer-events: none;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: $wedio-red-light;
+    }
+  }
+
+  // SECONDARY DARK
+  &.secondary-dark {
+    background-color: #fff;
+    color: #212121;
+    border: none;
+
+    &:hover {
+      background-color: $green;
+      color: #fff;
+    }
+
+    // SECONDARY DARK GHOST
+    &.ghost {
+      box-shadow: 0 0 0 1px #fff inset;
+      -webkit-box-shadow: 0 0 0 2px #fff inset;
+      background-color: transparent;
+      color: #fff;
+
+      &:hover {
+        color: #212121;
+        background-color: #fff;
+        border: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+    }
+  }
+  // SECONDARY LIGHT
+  &.secondary-light {
+    background-color: #212121;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: $green;
+    }
+
+    // SECONDARY LIGHT GHOST
+    &.ghost {
+      background-color: transparent;
+      color: #212121;
+      box-shadow: 0 0 0 2px #212121 inset;
+      -webkit-box-shadow: 0 0 0 2px #212121 inset;
+
+      &:hover {
+        color: #fff;
+        background-color: #212121;
+      }
+    }
+  }
+
+  // SECONDARY LIGHT
+  &.secondary-light {
+    background-color: #212121;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: $green;
+    }
+
+    // SECONDARY LIGHT GHOST
+    &.ghost {
+      background-color: transparent;
+      color: #212121;
+      box-shadow: 0 0 0 2px #212121 inset;
+      -webkit-box-shadow: 0 0 0 2px #212121 inset;
+
+      &:hover {
+        color: #fff;
+        background-color: #212121;
+      }
+    }
+  }
+
+  // OUTLINE DARK
+  &.outline-dark {
+    color: #212121;
+    background-color: white;
+    border: 2px solid #212121;
+    line-height: 44px;
+
+    &[disabled="disabled"],
+    &:disabled {
+      color: #aaaaaa;
+      border-color: #aaaaaa;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    &.dotted {
+      line-height: 32px;
+      border: 2px dotted #212121;
+    }
+
+    &:hover {
+      color: white;
+      background-color: #212121;
+    }
+  }
+}
+
+// OUTLINE LIGHT
+.outline-light {
+  background-color: #212121;
+  color: white;
+  border: 2px solid #212121;
+  line-height: 44px;
+
+  &:hover {
+    background-color: white;
+    color: #212121;
+  }
+}
+// HELPER CLASS FOR BUTTONS IN SIGN-IN AND RESIGNETR
+.narrow-from-desktop {
+  @media screen and (min-width: 1024px) {
+    min-width: 180px;
+  }
+}
+
+.tiny-until-tablet-outline {
+  @media screen and(max-width: 769px) {
+    font-size: 12px;
+    min-width: 150px;
+    min-height: 40px;
+    line-height: 38px;
+  }
+}
+
+.tiny-until-tablet {
+  @media screen and(max-width: 769px){
+    font-size: 12px;
+    min-width: 150px;
+    min-height: 40px;
+    line-height: 40px;
+  }
+}
+
+// new-listing
+.new-listing-slim {
+  background-color: white;
+  color: #212121;
+  border: 2px solid #212121;
+  line-height: 44px;
+  &:disabled {
+    color: #aaaaaa;
+    border-color: #aaaaaa;
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.new-listing-slim:hover {
+  background-color: #212121;
+  color: white;
+}
+
+// BIG BUTTON
+.big {
+  min-width: 220px;
+}
+
+// TINY BUTTON
+.tiny {
+  min-width: 150px;
+  font-size: 12px;
+  @media screen and (min-width: 1024px) {
+    min-height: 38px;
+    line-height: 39px;
+    min-width: 120px;
+  }
+}
+
+// TINY-2 BUTTON
+.tiny-2 {
+  min-width: 150px;
+  font-size: 12px;
+  min-height: 38px;
+  line-height: 39px;
+}
+
+// MIN-WIDTH 210PX
+.wedio-button-min-width-210 {
+  min-width: 210px;
+}
+
+// MIN-WIDTH 240PX
+.wedio-button-min-width-240 {
+  min-width: 240px;
+}
+
+// MIN-WIDTH 260PX
+.wedio-button-min-width-260 {
+  min-width: 260px;
+}

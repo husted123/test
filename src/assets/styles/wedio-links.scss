@@ -1,0 +1,111 @@
+
+.wedio-link-light {
+  font-size: inherit;
+  color: #212121;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted;
+  padding: 0px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    background-color: #28cfc7;
+    transition-duration: 0.3s;
+  }
+
+  &.active-mobile {
+    @include until($desktop) {
+      color: #fff;
+      border-bottom: 1px dotted #fff;
+      background-color: #28cfc7;
+      transition-duration: 0.3s;
+    }
+  }
+}
+
+.wedio-link-dark {
+  font-size: inherit;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted;
+  padding: 0px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #9ea5a5;
+    border-bottom: 1px dotted #9ea5a5;
+    background-color: #fff;
+    transition-duration: 0.3s;
+  }
+
+  &.active-mobile {
+    @include until($desktop) {
+      color: #9ea5a5;
+      border-bottom: 1px dotted #9ea5a5;
+      background-color: #fff;
+      transition-duration: 0.3s;
+    }
+  }
+}
+
+.wedio-link-green {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  color: #12b2a9;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #12b2a9;
+  padding: 0px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    background-color: #28cfc7;
+    transition-duration: 0.3s;
+  }
+}
+
+.wedio-link-red {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  color: $wedio-red;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $wedio-red;
+  padding: 0px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    background-color: $wedio-red;
+    transition-duration: 0.3s;
+  }
+}
+
