@@ -1,25 +1,49 @@
 <template>
-  <div>
-    <Button/>
-    <Modal/>
-    <h1>{{ msg }}</h1>
-    
+  <div id="app">
+    <button type="button" class="btn" @click="showModal">
+      Open Modal!
+    </button>
+
+    <Modal v-show="isModalVisible" @close="closeModal" />
   </div>
 </template>
 
 <script>
-import Button from './Button'
-import Modal from './Modal'
+import Modal from "./Modal.vue";
+
 export default {
-  props: {
-    msg: String
-  },
+  name: "Content",
   components: {
-    Button,
     Modal
+  },
+  data() {
+    return {
+      isModalVisible: false
+    };
+  },
+  methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style>
+.btn {
+  padding: 10px;
+  font-family: open-sans;
+  font-weight: bold;
+  font-size: 14;
+  margin: 0 auto;
+  color: white;
+  background: #4aae9b;
+  border: 1px solid #4aae9b;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+</style>
