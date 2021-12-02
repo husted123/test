@@ -57,19 +57,18 @@ export default {
 .modal-footer {
   padding: 10px;
   display: flex;
+  background: linear-gradient(#212121 0%, #333 100%)
 }
 
 .modal-header {
   position: relative;
   border-bottom: 1px solid #eeeeee;
-  background-color: #212121;
   color: #f2f2f2;
 }
 
 .modal-footer {
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #212121;
   color: #f2f2f2;
 }
 
