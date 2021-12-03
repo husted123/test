@@ -57,7 +57,7 @@ export default {
 .modal-footer {
   padding: 10px;
   display: flex;
-  background: linear-gradient(#212121 0%, #333 100%)
+  background: linear-gradient(#212121 0%, #333 100%);
 }
 
 .modal-header {
