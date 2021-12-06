@@ -7,7 +7,7 @@
       </header>
       <section class="modal-body">
         <p>
-          Click on confirm, X or outside this modal to close it!
+          Click on confirm, X or outside this modal to close it! :)
         </p>
       </section>
       <footer class="modal-footer">
